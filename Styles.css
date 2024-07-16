@@ -1,0 +1,528 @@
+.header {
+    width: 100%;
+    height:35px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size:larger;
+    padding-bottom: 0%;
+    margin: 0%;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    filter: brightness(100%);
+    transition: filter 0.5s ease; /* Add transition for smooth effect */
+}
+
+.background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dark-mode .background-image {
+    filter: brightness(30%); /* Adjust brightness for dark mode */
+}
+
+
+/* Put color to img containeer */
+#img{
+    background-color: rgb(187, 186, 186);
+}
+
+/*  nav bar */
+.navbar{
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+.navbar #show-popup1{
+    color: #535252;
+    padding-top: 8px;
+}
+
+/* CSS for button */
+#btnsignup-submit button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff; /* Blue background */
+    border: none;
+    border-radius: 5px;
+    width:100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btnsignup-submit button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+/* btn login */
+#show-popup1{
+    border: 0px;
+    background-color:rgb(255, 255, 255);
+    align-items:baseline;
+    padding-top: 10%;
+    font-weight: bold;
+    color:#686868;
+}
+
+/* Popup Styles */
+
+/* CSS for popup1 */
+#popup1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 300px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: top 400ms ease-in-out 200ms, opacity 700ms ease-in-out 400ms, transform 20ms ease-in-out 0ms;
+    z-index: 1000;
+}
+
+#popup1.active {
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 0ms, opacity 800ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
+}
+
+#popup1 .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#popup1 .form h2 {
+    text-align: center;
+    color: #222;
+    margin: 10px 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#popup1 .form .form-element {
+    margin: 15px 0;
+}
+
+#popup1 .form .form-element label {
+    font-size: 14px;
+    color: #4d4949;
+    font-weight: bold;
+}
+
+#popup1 .form .form-element input[type="text"],
+#popup1 .form .form-element input[type="password"] {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+/* CSS for card */
+.card {
+    overflow: hidden;
+}
+
+.card img {
+    transition: transform 0.5s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+/*Dark mood */
+
+body.dark-mode {
+    background-color: #313335;
+    color: #ffffff;
+}
+
+.navbar-dark-mode {
+    background-color: #313335;
+}
+
+.navbar-dark-mode .nav-link {
+    color: #ffffff;
+}
+
+.navbar-dark-mode .fa-moon {
+    color: #ffffff;
+}
+
+.popup-dark-mode{
+    background-color: #313335;
+    color: #ffffff;
+}
+
+.container-dark-mode{
+    background-color: #313335;
+}
+
+.buttonDark {
+    display: flex;
+    align-items: center;
+}
+
+.buttonDark button {
+    background: gray;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 40%;
+}
+/*-------------*/
+
+
+/* Easy set-sofa  */
+#easy1{
+    color: red;
+    font-size: 100px;
+    width: 80%;
+    font-family: 'Gill Sans';
+    padding-left: 1%;
+    padding-top: 0%;
+    margin: 0%;
+}
+
+/* sub topic */
+#easy2{
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    padding-left: 1.5%;
+    padding-top: 0%;
+    margin: 0%;
+}
+
+/* img containeer  */
+#c{
+    font-weight:600;
+    width:auto;
+    padding: 20px;
+    background-color: #999;
+    border-radius: 20px; 
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Card Img */
+.card{
+    width: 300px;
+    height: 400px;
+}
+
+.img{
+    padding-left: 1%;
+    width: 100%;
+}
+.card-body {
+    width: 100%;
+    color: #222;
+}
+.container-fluid{
+    height:auto;
+    width: 100%;
+    padding: 0%;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);   
+}
+
+.horizontal-scroll-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden; /* Evertical scrolling is disabled */
+    white-space: nowrap;
+    padding-bottom: 10px; /* to prevent scrollbar from overlapping content */
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  /* scroller width */
+}
+
+.row.flex-nowrap {
+    display: flex;
+    flex-wrap: nowrap; /* no any wrapping occurs */
+}
+
+.card {
+    display: inline-block;
+    margin-right: 10px; /* give spacing between cards */
+    vertical-align: top; /* all cards align to the top */
+    width: 200px; 
+}
+
+.card-body{
+    width: 100%;
+}
+
+.custom-container {
+    max-width: 2000px; /* Set this to the desired maximum width */
+}
+
+/* Image popup*/
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;} /*curssor go img then image light 0.7*/
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #caption 
+{  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+  
+@-webkit-keyframes zoom 
+{
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+  
+@keyframes zoom 
+{
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* Type on img */
+.overlay-text {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: serif;
+    font-size: 200%;
+}
+  
+  /* The Close Button */
+.close 
+{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+.close:hover,.close:focus 
+{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+  /* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px)
+{
+    .modal-content 
+    {
+      width: 100%;
+    }
+}
+
+/* P1 */
+#p2{
+    font-weight: bolder;
+    padding-left: 2%;
+    font-family: Gill Sans;
+    color:red;
+    font-size: 100%;
+}
+
+#b2{
+    background-color:transparent;
+    border: transparent;
+    color: #ffee06;
+}
+
+#f{
+    color: #ffee06;
+    font-size: small;
+}
+
+/* Style for login container */
+
+#logcontainer {
+    width:fit-content;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#logcontainer h2 {
+    text-align: center;
+    color: #222;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+td {
+    color: #222;
+    font-weight:500;
+    white-space: nowrap;
+}
+
+input[type="text"], input[type="password"], input[type="submit"] {
+    width:fit-content;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*footer*/
+#footer{
+    color: #000000;
+    background-color: #686868;
+    padding-bottom: 0%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 0%;
+    line-height: 20px;
+}
+
+#footer .row{
+    padding: 0%;
+}
+
+
+/* ------------Form Page -----------------*/
+
+#c1{
+    font-weight:600;
+    width:auto;
+    display: inline-block;
+    padding: 20px;
+    background-color: #6e6d6d; /* Background color */
+    border-radius: 50px; 
+    border-color: #000000;   
+}
+
+.error { /* Empty box display */
+    border: 2px solid red;
+}
+
+.c1  p{
+    color: rgb(104, 74, 74);
+    font-size: 200%;
+}
+
+.tr{
+    padding-top: 20px;
+}
+
+.tr td {
+    line-height: 1.0; /* Adjust the value as needed */
+    padding-top: 10px; /* Optional: add padding for extra spacing */
+    padding-bottom: 10px; /* Optional: add padding for extra spacing */
+}
+
+.btn{
+    width: 30%;
+}
+
+.b3{
+    background-color: #000000;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+#b6 {
+    width:fit-content;
+}
+
